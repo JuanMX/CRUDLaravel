@@ -9,3 +9,4 @@ Usa:
 * Datatables
 * Mysql
 * Diseño responsive
+* Font awesome

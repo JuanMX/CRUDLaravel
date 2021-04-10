@@ -9,6 +9,8 @@ class DatabaseSeeder extends Seeder
      * Seed the application's database.
      *
      * @return void
+     * refresca las migraciones y corre de nuevo el seeder
+     * php artisan migrate:fresh --seed 
      */
     public function run()
     {
