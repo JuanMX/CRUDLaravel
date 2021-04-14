@@ -20,5 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('usuario', 'UsuarioController@index')->name('usuario');
-Route::post('listaUsuario', 'UsuarioController@listaUsuario')->name('listaUsuario');
+Route::get('usuarios', 'UsuarioController@index')->name('usuarios');
+Route::post('listarUsuarios', 'UsuarioController@listarUsuarios')->name('listaUsuario');
+Route::post('bloquearUsuario', 'UsuarioController@bloquearUsuario')->name('bloquearUsuario');
+Route::post('desbloquearUsuario', 'UsuarioController@desbloquearUsuario')->name('desbloquearUsuario');
+Route::post('eliminarUsuario', 'UsuarioController@eliminarUsuario')->name('eliminarUsuario');
