@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->boolean('bloqueado')->default(false);
             $table->boolean('eliminado')->default(false);
+            $table->rememberToken();
             $table->timestamps();
         });
     }
