@@ -1,5 +1,5 @@
 
-    <div class="modal fade bd-example-modal-md" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="modalEditarUsuario" id="modalEditarUsuario" aria-hidden="true">
+    <div class="modal fade bd-example-modal-md" tabindex="-1" role="dialog" data-bs-backdrop="static" data-keyboard="false" aria-labelledby="modalEditarUsuario" id="modalEditarUsuario" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -16,20 +16,20 @@
                         <div class="row">
                             <div class="form-group col-md-12">
                                 <label  class="col-form-label" for="nombreUsuarioEditar">Nombre del usuario<span title="Campo obligatorio" class="requerido"> * </span></label>
-                                <input type="text" class="form-control form-control-md" size="100" maxlength="50" style="width: 100%" name="nombreUsuario" id="nombreUsuarioEditar"  required="true" >
+                                <input type="text" class="form-control form-control-md" size="100" maxlength="50" style="width: 100%" name="nombreUsuario" id="nombreUsuarioEditar"  required="true" autocomplete="off">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="form-group col-md-12">
-                                <label  class="col-form-label" for="nombreUsuarioEditar">Correo electrónico<span title="Campo obligatorio" class="requerido"> * </span></label>
-                                <input type="text" class="form-control form-control-md" size="100" maxlength="100" style="width: 100%" name="email" id="emailEditar"  required="true" >
+                                <label  class="col-form-label" for="emailEditar">Correo electrónico<span title="Campo obligatorio" class="requerido"> * </span></label>
+                                <input type="text" class="form-control form-control-md" size="100" maxlength="100" style="width: 100%" name="email" id="emailEditar"  required="true" autocomplete="off">
                             </div>
                         </div>
                         
                     </form>
                     <br>
-                    <label > <span title="Campos obligatorios" class="requerido"> * </span>Campos obligatorios </label>
+                    <label ><small> <span title="Campos obligatorios" class="requerido"> * </span>Campos obligatorios </small></label>
                         
                 </div>
 

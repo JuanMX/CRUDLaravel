@@ -32,7 +32,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <!-- Estilos -->
-    <link href="{{ secure_asset('css/layout/layout.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/layout/layout.css') }}?v={{ env('VERSION_CSS_JS') }}" rel="stylesheet">
 
 </head>
 <body>
@@ -100,7 +100,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
-    <script src="{{ asset('js/utils.js') }}?v={{ env('VERSION_CSS_JS') }}"></script>
+    <script src="{{ secure_asset('js/utils.js') }}?v={{ env('VERSION_CSS_JS') }}"></script>
     @yield('script')
 </body>
 </html>

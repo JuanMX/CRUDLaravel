@@ -27,3 +27,5 @@ Route::post('editarUsuario', 'UsuarioController@editarUsuario')->name('editarUsu
 Route::post('bloquearUsuario', 'UsuarioController@bloquearUsuario')->name('bloquearUsuario');
 Route::post('desbloquearUsuario', 'UsuarioController@desbloquearUsuario')->name('desbloquearUsuario');
 Route::post('eliminarUsuario', 'UsuarioController@eliminarUsuario')->name('eliminarUsuario');
+
+Route::get('costos', 'CostoController@index')->name('costos');

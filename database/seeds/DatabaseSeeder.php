@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\User;
+use App\Costo;
 
 class DatabaseSeeder extends Seeder
 {
@@ -24,5 +25,7 @@ class DatabaseSeeder extends Seeder
                 'password' => Hash::make('987654321'),
             ]
         );
+
+        factory(Costo::class, 5)->create();
     }
 }

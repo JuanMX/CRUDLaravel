@@ -9,8 +9,8 @@
     </div>
 
     
-    <div class='table-responsive-xxl pt-5'>
-    <div class="float-right pb-5">
+    <div class='table-responsive-lg'>
+    <div class="float-right pb-3">
         <button type="button" class="btn btn-primary" id="btn_nuevoUsuario" name="btn_nuevoUsuario"><i class="fas fa-user-plus" aria-hidden="true"></i> Nuevo</button>
     </div>
         <table id="tablaUsuario" class="table table-hover">
