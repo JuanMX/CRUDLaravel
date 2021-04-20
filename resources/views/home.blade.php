@@ -16,26 +16,10 @@
 
                     {{ __('You are logged in!') }}
                 </div>
-                <table id="tablaHome" class="table table-hover">
-                    <input type="hidden" name="_token" content="{{ csrf_token() }}" value="{{ csrf_token() }}" id="_token">
-                    <thead>
-                        <tr>
-                            <th>Usuario</th>
-                            <th>Nombre</th>
-                            <th>Rol</th>
-                            <th>email</th>
-                            <th>Opciones</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
             </div>
         </div>
     </div>
     
 </div>
 
-@endsection
-@section('script')
-<script src="{{ secure_asset('js/usuario/usuario.js') }}?v={{ env('VERSION_CSS_JS') }}"></script>
 @endsection

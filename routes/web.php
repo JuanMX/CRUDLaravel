@@ -29,3 +29,4 @@ Route::post('desbloquearUsuario', 'UsuarioController@desbloquearUsuario')->name(
 Route::post('eliminarUsuario', 'UsuarioController@eliminarUsuario')->name('eliminarUsuario');
 
 Route::get('costos', 'CostoController@index')->name('costos');
+Route::post('listarCostos', 'CostoController@listarCostos')->name('listarCostos');

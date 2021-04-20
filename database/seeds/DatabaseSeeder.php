@@ -26,6 +26,6 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
-        factory(Costo::class, 5)->create();
+        factory(Costo::class, 25)->create();
     }
 }

@@ -18,6 +18,8 @@ class CreateCostosTable extends Migration
             $table->string('descripcion');
             $table->string('costo');
             $table->dateTime('fecha', 0);
+            $table->boolean('bloqueado')->default(false);
+            $table->boolean('eliminado')->default(false);
             $table->timestamps();
         });
     }

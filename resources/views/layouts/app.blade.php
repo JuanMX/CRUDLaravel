@@ -34,6 +34,8 @@
     <!-- Estilos -->
     <link href="{{ secure_asset('css/layout/layout.css') }}?v={{ env('VERSION_CSS_JS') }}" rel="stylesheet">
 
+    @yield('css')
+
 </head>
 <body>
     <div id="app">
@@ -48,9 +50,15 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav ">
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('usuarios') }}">Usuarios</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('costos') }}">Costos</a>
                         </li>
                     </ul>
 
