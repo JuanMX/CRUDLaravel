@@ -13,8 +13,7 @@
 <div class="container">
     <div class="row justify-content-center">
         
-        <h1><i class="fas fa-dollar-sign" aria-hidden="true"></i> &nbsp; CRUD 2: Un CRUD de costos </h1>
-        <h2>Usa datatables <i>details-control y server-side</i></h2>
+        <h2><i class="fas fa-dollar-sign" aria-hidden="true"></i> &nbsp; CRUD 2: Un CRUD de costos con <i>details-control y server-side</i></h2>
     </div>
 
     
