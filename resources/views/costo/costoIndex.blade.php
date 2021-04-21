@@ -8,8 +8,6 @@
 @endsection
 @section('content')
 
-<input type="text" name="daterange" />
-
 <div class="container">
     <div class="row justify-content-center">
         
@@ -19,7 +17,7 @@
     
     <div class='table-responsive-lg'>
     <div class="float-right pb-3">
-        <button type="button" class="btn btn-primary" id="btn_nuevoUsuario" name="btn_nuevoUsuario"> <i class="fas fa-dollar-sign" aria-hidden="true"></i> Nuevo</button>
+        <button type="button" class="btn btn-primary" id="btn_nuevoCosto" name="btn_nuevoCosto"> <i class="fas fa-dollar-sign" aria-hidden="true"></i> Nuevo</button>
     </div>
         <table id="tablaCosto" class="table table-striped table-hover display">
             <input type="hidden" name="_token" content="{{ csrf_token() }}" value="{{ csrf_token() }}" id="_token">
@@ -27,7 +25,7 @@
                 <tr>
                     <th>Descripción</th>
                     <th>Costo</th>
-                    <th>Última actualización</th>
+                    <th>Inicio de vigencia</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -35,7 +33,8 @@
         </table>
     </div>
 </div>
-
+@include('costo.modales.modalCrearCosto')
+@include('costo.modales.modalEditarCosto')
 @endsection
 @section('script')
 <script src="{{ secure_asset('js/costo/costo.js') }}?v={{ env('VERSION_CSS_JS') }}"></script>
