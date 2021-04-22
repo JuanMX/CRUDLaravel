@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         
-        <h1><i class="fa fa-users" aria-hidden="true"></i> &nbsp; CRUD 1: Un CRUD de usuarios normal</h1>
+        <h2><i class="fa fa-users" aria-hidden="true"></i> &nbsp; CRUD 1: Un CRUD de usuarios normal</h2>
 
     </div>
 

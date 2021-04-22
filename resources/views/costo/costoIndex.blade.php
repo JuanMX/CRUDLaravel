@@ -39,9 +39,11 @@
 @section('script')
 <script src="{{ secure_asset('js/costo/costo.js') }}?v={{ env('VERSION_CSS_JS') }}"></script>
 
+{{--Para date range picker--}}
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
-
+{{--Para imask--}}
+<script src="https://unpkg.com/imask"></script>
 @endsection

@@ -30,6 +30,8 @@ Route::post('eliminarUsuario', 'UsuarioController@eliminarUsuario')->name('elimi
 
 Route::get('costos', 'CostoController@index')->name('costos');
 Route::post('listarCostos', 'CostoController@listarCostos')->name('listarCostos');
+Route::post('crearCosto', 'CostoController@crearCosto')->name('crearCosto');
+Route::post('editarCosto', 'CostoController@editarCosto')->name('editarCosto');
 Route::post('bloquearCosto', 'CostoController@bloquearCosto')->name('bloquearCosto');
 Route::post('desbloquearCosto', 'CostoController@desbloquearCosto')->name('desbloquearCosto');
 Route::post('eliminarCosto', 'CostoController@eliminarCosto')->name('eliminarCosto');
