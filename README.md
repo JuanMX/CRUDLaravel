@@ -10,3 +10,6 @@ Usa:
 * Mysql
 * Diseño responsive
 * Font awesome
+* Date range picker
+* MomentJS
+* Imask
