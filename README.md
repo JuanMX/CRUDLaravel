@@ -67,3 +67,4 @@ Este sistema usa:
 * Date range picker
 * Moment JS
 * Imask
+* jQuery

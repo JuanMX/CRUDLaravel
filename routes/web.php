@@ -17,9 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('login','LoginController@login')->name('login');
+Route::post('loginUsuario','LoginController@loginUsuario')->name('loginUsuario');
+Route::any('logout','LoginController@logout')->name('logout');
+
 Route::get('usuarios', 'UsuarioController@index')->name('usuarios');
 Route::post('listarUsuarios', 'UsuarioController@listarUsuarios')->name('listaUsuario');
 Route::post('crearUsuario', 'UsuarioController@crearUsuario')->name('crearUsuario');
