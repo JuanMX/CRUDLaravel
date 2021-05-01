@@ -28,6 +28,16 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
+        DB::table('users')->insert(
+            [
+                'name' => 'JuanBasico',
+                'nick' => 'juanbasico',
+                'email' => 'juanbasico@mail.com',
+                'password' => Hash::make('987654321'),
+                'rol' => 'ROL_BASICO',
+            ]
+        );
+
         factory(Costo::class, 25)->create();
     }
 }
