@@ -18,10 +18,15 @@ use Illuminate\Support\Str;
 */
 
 $factory->define(User::class, function (Faker $faker) {
+    $roles=['ROL_BASICO', 'ROL_ADMINISTRADOR'];
+    $generos=['MASCULINO', 'FEMENINO', 'OTRO'];
     return [
         'name' => $faker->name,
+        'nick' => 'usuario'.$faker->unique()->randomNumber(),
         'email' => $faker->unique()->safeEmail,
         'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
         'remember_token' => Str::random(10),
+        'rol' => $roles[rand(0,1)],
+        'genero' => $generos[rand(0,2)],
     ];
 });
