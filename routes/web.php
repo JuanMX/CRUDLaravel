@@ -25,9 +25,7 @@ Route::get('login','LoginController@login')->name('login');
 Route::post('loginUsuario','LoginController@loginUsuario')->name('loginUsuario');
 Route::any('logout','LoginController@logout')->name('logout');
 
-
-Route::group(['middleware' => ['logRol']], function(){
-
+Route::group(['middleware' => ['admin']], function(){
     Route::get('usuarios', 'UsuarioController@index')->name('usuarios');
     Route::post('listarUsuarios', 'UsuarioController@listarUsuarios')->name('listaUsuario');
     Route::post('crearUsuario', 'UsuarioController@crearUsuario')->name('crearUsuario');
@@ -35,6 +33,9 @@ Route::group(['middleware' => ['logRol']], function(){
     Route::post('bloquearUsuario', 'UsuarioController@bloquearUsuario')->name('bloquearUsuario');
     Route::post('desbloquearUsuario', 'UsuarioController@desbloquearUsuario')->name('desbloquearUsuario');
     Route::post('eliminarUsuario', 'UsuarioController@eliminarUsuario')->name('eliminarUsuario');
+});
+
+Route::group(['middleware' => ['logRol']], function(){
 
     Route::get('costos', 'CostoController@index')->name('costos');
     Route::post('listarCostos', 'CostoController@listarCostos')->name('listarCostos');

@@ -40,7 +40,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="home">
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -48,29 +48,24 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('usuarios') }}">Usuarios</a>
-                        </li>
-                    </ul>
+                    @if(Auth::user()->rol == 'ROL_ADMINISTRADOR')
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('usuarios') }}">Usuarios</a>
+                            </li>
+                        </ul>
 
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('costos') }}">Costos</a>
-                        </li>
-                    </ul>
-
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Clientes</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proveedores</a>
-                        </li>
-                    </ul>
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Clientes</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Proveedores</a>
+                            </li>
+                        </ul>
+                    @endif
                     <ul class="navbar-nav ">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Inventario</a>
