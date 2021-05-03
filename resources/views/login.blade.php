@@ -12,10 +12,10 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">Correo electrónico</label>
+                            <label for="nick" class="col-md-4 col-form-label text-md-right">Nick</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" required autocomplete="off" autofocus>
+                                <input id="nick" type="text" class="form-control" name="nick" required autocomplete="off" autofocus>
                             </div>
                         </div>
 

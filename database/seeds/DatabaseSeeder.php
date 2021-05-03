@@ -21,8 +21,8 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert(
             [
                 'name' => 'JuanMX',
-                'nick' => 'juanmx',
-                'email' => 'juanmx@mail.com',
+                'nick' => 'juanAdmin',
+                'email' => 'juanadmin@mail.com',
                 'password' => Hash::make('987654321'),
                 'rol' => 'ROL_ADMINISTRADOR',
             ]
@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert(
             [
                 'name' => 'JuanBasico',
-                'nick' => 'juanbasico',
+                'nick' => 'juanBasico',
                 'email' => 'juanbasico@mail.com',
                 'password' => Hash::make('987654321'),
                 'rol' => 'ROL_BASICO',

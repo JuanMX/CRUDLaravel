@@ -17,8 +17,9 @@
             <input type="hidden" name="_token" content="{{ csrf_token() }}" value="{{ csrf_token() }}" id="_token">
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>email</th>
+                    <th>Nick</th>
+                    <th>Tipo de usuario</th>
+                    <th>Género</th>
                     <th>Opciones</th>
                 </tr>
             </thead>

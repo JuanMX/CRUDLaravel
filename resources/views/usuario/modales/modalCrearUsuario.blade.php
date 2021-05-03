@@ -12,21 +12,53 @@
                 <div class="modal-body">
                     <form method="POST" id="formularioCrearUsuarioModal" >
                         @csrf
-                        
 
+                        {{--
                         <div class="row">
                             <div class="form-group col-md-12" >
                                 <label  class="col-form-label" for="nombreCrear">Nombre del usuario <span title="Campo obligatorio" class="requerido"> * </span></label>
                                 <input type="text" class="form-control form-control-md" size="100" maxlength="50" style="width: 100%" name="nombre" id="nombreCrear"  required="true" autocomplete="off">
                             </div>
                         </div>
+                        --}}
 
+                        <div class="row">
+                            <div class="form-group col-md-12" >
+                                <label  class="col-form-label" for="nickCrear">Nick <span title="Campo obligatorio" class="requerido"> * </span></label>
+                                <input type="text" class="form-control form-control-md" size="100" maxlength="50" style="width: 100%" name="nick" id="nickCrear"  required="true" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label  class="col-form-label" for="rolCrear">Rol del usuario <span title="Campo obligatorio" class="requerido"> * </span></label>
+
+                                <select class="form-control form-control-md form-select" style="width: 100%" name="rol" required="true" id="rolCrear" >
+                                    <option value="ROL_BASICO">Rol básico</option>
+                                    <option value="ROL_ADMINISTRADOR">Rol administrador</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label  class="col-form-label" for="generoCrear">Género<span title="Campo obligatorio" class="requerido"> * </span></label>
+
+                                <select class="form-control form-control-md form-select" style="width: 100%" name="genero" required="true" id="generoCrear" >
+                                    <option value="MASCULINO">Masculino</option>
+                                    <option value="FEMENINO">Femenino</option>
+                                    <option value="OTRO">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+
+                        {{--
                         <div class="row">
                             <div class="form-group col-md-12" >
                                 <label  class="col-form-label" for="emailCrear">Correo electrónico <span title="Campo obligatorio" class="requerido"> * </span></label>
                                 <input type="text" class="form-control form-control-md" size="100" maxlength="100" style="width: 100%" name="email" id="emailCrear"  required="true" autocomplete="off">
                             </div>
                         </div>
+                        --}}
 
                         <div class="row">
                             <div class="form-group col-md-12">
