@@ -33,6 +33,9 @@ Route::group(['middleware' => ['admin']], function(){
     Route::post('bloquearUsuario', 'UsuarioController@bloquearUsuario')->name('bloquearUsuario');
     Route::post('desbloquearUsuario', 'UsuarioController@desbloquearUsuario')->name('desbloquearUsuario');
     Route::post('eliminarUsuario', 'UsuarioController@eliminarUsuario')->name('eliminarUsuario');
+
+    Route::get('bitacora', 'BitacoraController@index')->name('bitacora');
+    Route::post('bitacoraDataTable', 'BitacoraController@bitacoraDataTable')->name('bitacoraDataTable');
 });
 
 Route::group(['middleware' => ['logRol']], function(){

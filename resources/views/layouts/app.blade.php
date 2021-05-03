@@ -65,6 +65,11 @@
                                 <a class="nav-link" href="#">Proveedores</a>
                             </li>
                         </ul>
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('bitacora') }}">Bitácora</a>
+                            </li>
+                        </ul>
                     @endif
                     <ul class="navbar-nav ">
                         <li class="nav-item">
